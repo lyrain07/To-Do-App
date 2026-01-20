@@ -20,8 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const del = document.createElement('button');
         del.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
         const li = document.createElement('li');
-        li.innerHTML =task;
+        li.textContent =task;
         li.append(del);
+        li.style="display:flex; justify-content:space-between; align-items:center; padding:5px; margin:5px; border-bottom:1px solid gray;";
         del.onclick = () => {
             del.parentElement.remove();
         };
