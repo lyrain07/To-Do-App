@@ -11,7 +11,7 @@
 .container{
     max-width: 100%;
     min-height: 100vh;
-    background: linear-gradient(hsla(0, 100%, 87%, 0.47), hsla(292, 52%, 42%, 0.857));
+    background: linear-gradient(hsla(247, 97%, 85%, 0.47), hsla(292, 89%, 35%, 0.857));
     padding:10px 20px;
     justify-content: center;
     align-items: center;
@@ -39,9 +39,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 45px;
+    font-weight:700;
 }
 .todo-app img{
-    width:35px;
+    width:50px;
     margin-left: 10px;
 }
 form{
