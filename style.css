@@ -123,7 +123,7 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
-    opacity: 0.6; /* only affects the image */
+    opacity: 0.3; /* only affects the image */
     z-index: 0;
 }
 #tasks:empty {

@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('form').onsubmit = () => {
         const task = taskInput.value.trim();
         if(!task){
+            alert("Task cannot be empty!");
             return false;
         }
         const del = document.createElement('button');
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const li = document.createElement('li');
         li.textContent =task;
         li.append(del);
-        // li.style="display:flex; justify-content:space-between; align-items:center; padding:5px; margin:5px; border-bottom:1px solid gray;";
+         
         del.onclick = () => {
             del.parentElement.remove();
         };
