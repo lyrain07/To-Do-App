@@ -11,7 +11,7 @@
 .container{
     max-width: 100%;
     min-height: 100vh;
-    background: linear-gradient(hsla(247, 97%, 85%, 0.47), hsla(292, 89%, 35%, 0.857));
+    background: linear-gradient(hsla(330, 88%, 74%, 0.47), hsla(292, 89%, 35%, 0.857));
     padding:10px 20px;
     justify-content: center;
     align-items: center;
