@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     document.querySelector('form').onsubmit = () => {
         const task = taskInput.value.trim();
+        if(!task){
+            return false;
+        }
         const del = document.createElement('button');
         del.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
         const li = document.createElement('li');
