@@ -11,7 +11,7 @@
 .container{
     max-width: 100%;
     min-height: 100vh;
-    background: linear-gradient(hsla(330, 88%, 74%, 0.47), hsla(292, 89%, 35%, 0.857));
+    background: linear-gradient(hsla(330, 79%, 76%, 0.47), hsla(292, 89%, 35%, 0.857));
     padding:10px 20px;
     justify-content: center;
     align-items: center;
@@ -90,6 +90,16 @@ button{
     transform:scale(1.1);
     background: rgb(90, 40, 70);
  }
+
+ /* .checkbox{
+    background: rgb(17, 16, 17);
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+ } */
+
  .task-list{
     display: flex;
     width: 100%;
@@ -122,9 +132,14 @@ button{
     align-items: center;
 }
 #tasks li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 10px;
+    border-bottom:1px solid gray;
     position: relative; /* sits above the pseudo-element */
     z-index: 1;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: #000000;
     padding: 10px 15px;
@@ -141,3 +156,21 @@ button{
     font-weight: 600;
     transform: scale(1.02);
 }
+/* #tasks li.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+} */
+/* #tasks li .checkbox{
+    display: flex;
+    min-width: 20px;
+    height: 20px;
+    border: 2px solid rgb(124, 120, 124);
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 0.2s ease;
+    margin-left: 0px;
+    /* appearance: none; */
+/* } */
