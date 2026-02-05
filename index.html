@@ -12,16 +12,59 @@
     
     <body>
         <div class="container">
-            <div class="todo-app">
-                <h1>TO DO LIST <img src="assests/todo.png"></h1>
-                <form action="">
-                    <input type="text" placeholder="New task" id="task">
-                    <button type="submit" id="Submit"><i class="fa-solid fa-plus"></i></button>
-                </form>
-                <div class="task-list" id="task-list">
-                    <ul id="tasks"></ul>
+            <div class="app-wrapper">
+                 
+                <div class="dashboard">
+                    <h2>DASHBOARD</h2>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Tasks:</span>
+                            <span class="stat-value" id="total-tasks">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Completed:</span>
+                            <span class="stat-value" id="completed-tasks">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Remaining:</span>
+                            <span class="stat-value" id="remaining-tasks">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </div>
 
-                 </div>
-                 </div>   
+                 
+                <div class="todo-app">
+                     
+                    <div class="cheer-quote" id="cheer-quote">
+                        <i class="fa-solid fa-trophy"></i>
+                        <p>Amazing! You've completed all your tasks!</p>
+                    </div>
+
+                    <h1>TO DO LIST <img src="assests/todo.png"></h1>
+                    <form action="">
+                        <input type="text" placeholder="New task" id="task">
+                        <button type="submit" id="Submit"><i class="fa-solid fa-plus"></i></button>
+                    </form>
+                    
+                    <div class="task-list" id="task-list">
+                        <ul id="tasks"></ul>
+                    </div>
+
+                     
+                    <div class="action-buttons">
+                        <button type="button" class="action-btn mark-done-btn" id="mark-done-btn">
+                            <i class="fa-solid fa-check"></i> Mark as done
+                        </button>
+                        <button type="button" class="action-btn delete-all-btn" id="delete-all-btn">
+                            <i class="fa-solid fa-trash"></i> Delete all
+                        </button>
+                    </div>
+                </div>
+            </div>   
+        </div>
     </body>
 </html>
